@@ -1,0 +1,32 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+}
+
+#productImage {
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover;
+
+}
+
+#productName {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+#productDescription {
+    font-size: 2rem;
+}
+
+#productBrand {
+    font-size: 1.5rem;
+}
+
+#productPrice {
+    font-size: 2rem;
+    font-weight: bold;
+}

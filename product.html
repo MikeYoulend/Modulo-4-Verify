@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="product.css">
+  <title>Dettagli Prodotto</title>
+</head>
+<body>
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-2">Prodotto</a>
+            <button class="btn btn-outline-success m-3 p-3 fs-5 bg-success text-white" type="submit"
+                onclick="goBack()">Torna indietro</button>
+
+        </div>
+    </nav>
+
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img id="productImage" src="" class="img-fluid rounded-start" alt="Product Image">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 id="productName" class="card-title"></h5>
+            <p id="productDescription" class="card-text"></p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" id="productBrand"></li>
+              <li class="list-group-item" id="productPrice"></li>
+            </ul>
+            <button class="btn btn-primary mt-3 ms-3" id="backButton">Torna Indietro</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="product.js"></script>
+</body>
+</html>

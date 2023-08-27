@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="add.css">
+
+    <title>E-commerce</title>
+</head>
+
+<body>
+
+    
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-2">Admin</a>
+            <button class="btn btn-outline-success m-3 p-3 fs-5 bg-success text-white" type="submit"
+                onclick="goBack()">Torna indietro</button>
+
+        </div>
+    </nav>
+
+
+    <div class="container mt-3">
+
+        <form action="" id="user-form" class="" novalidate>
+
+            <input type="hidden" id="user-id">
+            <div class="mb-3">
+                <label for="name" class="form_label fs-3"> Nome </label>
+                <input type="text" class="form-control" id="name" required>
+                <span class="text-danger" id="nameError"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form_label fs-3"> description </label>
+                <input type="text" class="form-control" id="description" required>
+                <span class="text-danger" id="descriptionError"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="brand" class="form_label fs-3"> brand </label>
+                <input type="text" class="form-control" id="brand" required>
+                <span class="text-danger" id="brandError"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="imageURL" class="form_label fs-3">imageURL</label>
+                <input type="url" class="form-control" id="imageURL" required>
+                <span class="text-danger" id="imageURLError"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="price" class="form_label fs-3">price</label>
+                <input type="text" class="form-control" id="price" required>
+                <span class="text-danger" id="priceError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salva</button>
+        </form>
+
+
+
+    </div>
+
+    <div class="container-fluid">
+        <h2>Product List</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Brand</th>
+              <th>Price</th>
+              <th>Image URL</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="productList">
+            <!-- I prodotti verranno visualizzati qui -->
+          </tbody>
+        </table>
+      </div>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./add.js"></script>
+
+</body>
+
+</html>
